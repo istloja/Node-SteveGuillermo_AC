@@ -19,6 +19,10 @@ app.get("/hola/en",(req,res)=>{
 });
 
 
+require("./servicios.js")(app);
+
+
+
 app.listen(1234,()=>{
 
 	console.log("Servidor iniciado");
