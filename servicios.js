@@ -1,5 +1,5 @@
 module.exports = app=>{
 	
-	const admin = require("./Model/Admin.js");
-	app.post("obtenerAdmins",admin.getAll);
+	const admin = require("./Controller/controlador.js");
+	app.get("/obtenerAdmins",admin.getAll);
 }

@@ -13,11 +13,11 @@ admin.getAll = result =>{
 	mysql.query("SELECT * FROM admin",(err,res)=>{
 		if (err){
 			console.log(error,"error consulta");
-			result(-1,error);
+			result(null,error);
 			return; 
 		}
 		console.log(res);		
-		result(1,res);
+		result(null,res);
 });
 };
 module.exports = admin;
