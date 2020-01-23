@@ -9,18 +9,17 @@ app.get("/",(req,res)=>{
 });
 
 app.get("/hola/es",(req,res)=>{
-	console.log(req);
+//	console.log(req);
 	req.json({mensaje:"Hola mundo"})
 });
 
 app.get("/hola/en",(req,res)=>{
-	console.log(res);
+//	console.log(res);
 	res.json({mensaje:"Hello world"})
 });
 
 
 require("./servicios.js")(app);
-
 
 
 app.listen(1234,()=>{
